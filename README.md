@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# React Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Google Keep style notes app coded using React with local storage used to hold data. I have built similar projects to this in the past as part of courses but created this one as a code ahead of [Chris Blakely's](https://www.youtube.com/watch?v=8KB3DHI-QbM) YouTube video to see if I could create something similar. I also found it useful to observe his workflow.
 
-## Available Scripts
+<p align="centre">
+    <img scr="./light-mode.png"/>
+    <img src="dark-mode.png"/>
+</p>
 
-In the project directory, you can run:
+## What I Did
+The app checks local storage on first load and populates the notes state variable with an array of stored notes, if any, or leaves an empty array if note. The app has three first level components, the Header which contains the title and toggle switch for dark mode, a Search component to search within notes and then a NotesList which maps the stored information on to a second level Note component and also contains a level two component for adding a new note.
 
-### `npm start`
+Most functionality is contained within the App compoenent with the props drilled down to where they are needed. I am not yet experienced with the Context API so have not investigated this alternative approach.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Functionality is provided through useState, including callbacks to previous state, useEffect, conditional rendering and js map and filter methods.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What I learned
+* The white-space css style.
+* Having js.filter work on a state variable to provide change-on-type functionality.
+* React Icons.
