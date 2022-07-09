@@ -5,13 +5,13 @@ A Google Keep style notes app coded using React with local storage used to hold 
 Light Mode
 
 <p align="centre">
-    <img scr="light-mode.png"/>
+    <img src="light.png" />
 </p>
 
 Dark Mode
 
 <p align="centre">
-    <img src="dark-mode.png"/>
+    <img src="dark-mode.png" />
 </p>
 
 ## What I Did
