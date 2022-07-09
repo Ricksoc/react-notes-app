@@ -3,7 +3,7 @@
 A Google Keep style notes app coded using React with local storage used to hold data. I have built similar projects to this in the past as part of courses but created this one as a code ahead of [Chris Blakely's](https://www.youtube.com/watch?v=8KB3DHI-QbM) YouTube video to see if I could create something similar. I also found it useful to observe his workflow.
 
 <p align="centre">
-    <img scr="./light-mode.png"/>
+    <img scr="light-mode.png"/>
     <img src="dark-mode.png"/>
 </p>
 
